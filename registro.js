@@ -9,7 +9,8 @@ estudiantes.push(["samantha","femenino",19,70,"santa elena","visual","no"]);
 estudiantes.push(["carlos","masculino",25,80,"guayaquil","css","no"]);
 
 function printList(list)
-{
+{	document.body.innerHTML=""; 
+	document.write("<h1>REGISTRO ESTUDIANTIL</h1>");
 	var listHTML= '<ul>';
 		
 			for (var i=0; i<list.length; i+= 1)
@@ -36,7 +37,7 @@ function print(html)
 
 while(true)
 {
-	buscar= prompt("Para imprimir listado presiona L . Para salir presiona S. Ingrese estudiante a buscar:");
+	buscar= prompt("Para imprimir listado presiona L . Para salir presiona S. Ingrese estudiante a buscar (digite nombre con minuscula):");
 
 	if(buscar === "s" || buscar === "S")
 	{
@@ -46,11 +47,12 @@ while(true)
 	{
 		printList(estudiantes);
 	}else
-			{		/*var list;*/
+			{	
 				for(var j=0; j<5;j+=1)
-				{
+				{					
 					if(buscar===estudiantes[j][0])
-					{
+					{	document.body.innerHTML=""; 
+						document.write("<h1>REGISTRO ESTUDIANTIL</h1>");
 						document.write("Nombre: "+estudiantes[j][0]+'<br>');
 						document.write("Genero: "+estudiantes[j][1]+'<br>');
 						document.write("Edad: "+estudiantes[j][2]+'<br>');
