@@ -1,8 +1,7 @@
 var estudiantes=[];
-var regla=[];
+var buscar=[];
 /*
 estudiantes.push(["nombre","genero",edad,nota,ciudad,lenguajefavorito,estatrabajando]); */
-regla.push(["NOMBRE: ","GENERO: ","EDAD: ","NOTA: ","CIUDAD: ","LENGUAJE FAVORITO: ","ESTA TRABAJANDO: "]);
 estudiantes.push(["diego","masculino",20,100,"salinas","php","si"]);
 estudiantes.push(["sofia","femenino",25,100,"la libertad","sql","si"]);
 estudiantes.push(["carolina","femenino",28,90,"salinas","java","si"]);
@@ -25,7 +24,6 @@ function printList(list)
 				listHTML += 'Esta trabajando: '+estudiantes[i][6]+'<br>' +'</li>';
 			}	
 		
-
 		listHTML += '</ul>';
 	print(listHTML);
 }
@@ -47,6 +45,20 @@ while(true)
 	if(buscar ==="l" || buscar ==="L")
 	{
 		printList(estudiantes);
-	}
-	
+	}else
+			{		/*var list;*/
+				for(var j=0; j<5;j+=1)
+				{
+					if(buscar===estudiantes[j][0])
+					{
+						document.write("Nombre: "+estudiantes[j][0]+'<br>');
+						document.write("Genero: "+estudiantes[j][1]+'<br>');
+						document.write("Edad: "+estudiantes[j][2]+'<br>');
+						document.write("Nota: "+estudiantes[j][3]+'<br>');
+						document.write("Ciudad: "+estudiantes[j][4]+'<br>');
+						document.write("Lenguaje favorito: "+estudiantes[j][5]+'<br>');
+						document.write("Esta trabajando: "+estudiantes[j][6]+'<br>');
+					}
+				}
+			}
 }
