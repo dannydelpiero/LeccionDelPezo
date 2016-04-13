@@ -1,0 +1,13 @@
+Detalle Calificacion
+Requisitos Funcionales (5 Puntos): 2.5 Funciona, pero no se ha hecho como estaba en el requisito. Con Arreglo de Objetos.
+Errores Manejados o no tiene en consola (2 Puntos): 1.75 Punto. No hay errores en consola y si valido. No valida usuarios en mayusculas y minusculas. En opciones Hubiese sido mejor validar con toLowerCase pero no penalizare.
+Buen Uso de Funciones, Ciclos y DRY (2 Puntos): 1.5 Puntos. Si uso funciones y ciclos adecuadamente, pero note repeticion de codigo.
+Comentarios (1 Punto): 0 Puntos. No hay comentarios en el codigo
+Subio bien a github (1 Punto bonus): 1 Punto.
+Total: 6.75
+
+Comentarios Profesor:
+En general el software funciona, sin embargo no uso la estructura de arreglo de objetos que era el requisito fundamental de la prueba
+y bajo el cual se evaluaria.
+
+https://github.com/dannydelpiero/LeccionDelPezo
